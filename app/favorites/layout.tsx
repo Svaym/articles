@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Kumbh_Sans } from 'next/font/google';
-import './globals.css';
 
 const kumbhSans = Kumbh_Sans({
   weight: ['400', '700'],
@@ -9,8 +8,8 @@ const kumbhSans = Kumbh_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Articles',
-  description: 'Приложение для чтения статей',
+  title: 'Favorites',
+  description: 'Избранные статьи',
 };
 
 export default function RootLayout({
