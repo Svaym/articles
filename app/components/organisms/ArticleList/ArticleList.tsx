@@ -40,7 +40,7 @@ export default function ArticleList() {
   return (
     <section className="pb-2">
       <Container>
-        <div className="grid grid-cols-3 gap-2 mt-5">
+        <div className="grid grid-cols-3 gap-2 mt-5 sm:grid-cols-2 xxs:grid-cols-1">
           {currentItems.map((article, idx) => (
             <div key={idx} className="p-2 rounded-md border-2 border-gray-500">
               <Title>{article.title}</Title>

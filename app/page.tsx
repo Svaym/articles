@@ -1,3 +1,5 @@
+'use client';
+
 import ArticleList from './components/organisms/ArticleList/ArticleList';
 import Header from './components/organisms/Header/Header';
 
