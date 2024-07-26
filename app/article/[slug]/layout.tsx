@@ -1,3 +1,4 @@
+import Providers from '@/app/store/Providers';
 import type { Metadata } from 'next';
 import { Kumbh_Sans } from 'next/font/google';
 
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={kumbhSans.className}>{children}</body>
+      <body className={kumbhSans.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

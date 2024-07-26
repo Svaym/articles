@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Kumbh_Sans } from 'next/font/google';
 import './globals.css';
+import Providers from './store/Providers';
 
 const kumbhSans = Kumbh_Sans({
   weight: ['400', '700'],
@@ -20,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={kumbhSans.className}>{children}</body>
+      <body className={kumbhSans.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
