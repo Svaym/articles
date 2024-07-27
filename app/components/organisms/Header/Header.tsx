@@ -21,7 +21,7 @@ export default function Header() {
               <House className="w-8 h-8 transition-all ease-linear duration-300 hover:stroke-gray-400" />
             </Link>
             {favoritesArticles.length > 0 && (
-              <span className="absolute z-10 text-white font-bold top-4 right-[5.25rem] text-sm">
+              <span className="absolute z-10 text-white font-bold top-4 right-[5.25rem] text-sm pointer-events-none">
                 {favoritesArticles.length}
               </span>
             )}
